@@ -1,0 +1,19 @@
+.hero-container {
+  height: 80vh;
+  background-image: url("../images/groceries.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.wave {
+  position: absolute;
+}
