@@ -15,8 +15,7 @@ function ItemCard() {
       .then((data) => {
         console.log(data);
 
-        const new_data = JSON.parse(data);
-        setProductlist(new_data);
+        setProductlist(data);
       })
       .catch((error) => {
         console.error("Error fetching data: ", error);
