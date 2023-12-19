@@ -1,17 +1,37 @@
 "use client";
 
 import { Card } from "flowbite-react";
-import ITEMS from "../../Items";
+import { useState, useEffect } from "react";
+import { BASE_URL } from "../../utils";
 
 function ItemCard() {
+  const [productlist, setProductlist] = useState([]);
+
+  console.log(BASE_URL);
+
+  useEffect(() => {
+    fetch(BASE_URL + "/products")
+      .then((resp) => resp.json())
+      .then((data) => {
+        console.log(data);
+
+        const new_data = JSON.parse(data);
+        setProductlist(new_data);
+      })
+      .catch((error) => {
+        console.error("Error fetching data: ", error);
+      });
+  }, [BASE_URL]);
+
   return (
     <>
       <div className="bg-smokyblack text-white h-12 flex flex-row justify-center items-end mt-20">
         <h1>Fresh Produce</h1>
       </div>
       <div className="flex flex-row flex-wrap justify-around mt-10">
-        {ITEMS.map((item) => (
+        {productlist.map((item) => (
           <Card
+            key={item.id}
             className="max-w-sm"
             imgAlt="Apple Watch Series 7 in colors pink, silver, and black"
             imgSrc={item.url}
