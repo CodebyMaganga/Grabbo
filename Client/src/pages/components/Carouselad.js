@@ -4,6 +4,8 @@ import ADS from "../../Ads";
 
 export default class Responsive extends Component {
   render() {
+    const { handleClick } = this.props;
+
     var settings = {
       dots: true,
       infinite: false,
@@ -54,7 +56,10 @@ export default class Responsive extends Component {
                 />
                 <h2>{item.name}</h2>
                 <p>{item.price}</p>
-                <button className="rounded-lg mt-4 mb-2 mr-2 bg-barnRed px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800">
+                <button
+                  onClick={() => handleClick(item)}
+                  className="rounded-lg mt-4 mb-2 mr-2 bg-barnRed px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
+                >
                   Add To Cart
                 </button>
               </div>

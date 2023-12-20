@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import Logo from "../images/logo(4).png";
 import Hamburger from "../images/images.png";
 import { Link } from "react-router-dom";
+import ToteBag from "../images/totebag.png";
 import "./navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ setCartItemCount, cartItemCount }) => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <nav className="  flex flex-row justify-around items-center bg-applegreen">
@@ -33,10 +34,13 @@ const Navbar = () => {
               <li>Home</li>
             </Link>
             <Link to="/menu">
-              <li>Menu</li>
+              <li>Products</li>
             </Link>
             <Link to="/getstarted">
-              <li>Get Started</li>
+              <li>Sign Up</li>
+            </Link>
+            <Link to="/cart">
+              <img src={ToteBag} alt="" />
             </Link>
           </ul>
         </div>
@@ -47,11 +51,17 @@ const Navbar = () => {
               <li>Home</li>
             </Link>
             <Link to="/menu">
-              <li className="ml-4">Menu</li>
+              <li className="ml-4">Products</li>
             </Link>
-            <Link to="/getstarted">
-              <li className="ml-4">Get Started</li>
+            <Link>
+              <li className="ml-4">Sign Up</li>
             </Link>
+            <Link to="/cart">
+              <img className="image h-7 w-auto ml-20" src={ToteBag} alt="" />
+            </Link>
+            <span className="relative -top-4 text-smokyblack">
+              {cartItemCount}
+            </span>
           </ul>
         </div>
       </div>

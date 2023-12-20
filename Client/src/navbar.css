@@ -1,1 +1,8 @@
+.Digit {
+  position: relative;
+  top: -15px;
+}
 
+.image {
+  height: 8px;
+}

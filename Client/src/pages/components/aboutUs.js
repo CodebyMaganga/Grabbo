@@ -49,16 +49,16 @@ const AboutUs = () => {
             className="mx-0 flex items-center gap-4 pt-0 pb-8"
           >
             <Avatar
-              size="lg"
+              size="sm"
               variant="circular"
-              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
+              src="https://i.pinimg.com/originals/82/76/92/827692a7e7afc71b3cc59389a403c5ac.jpg"
               alt="tania andrew"
               className="h-[15rem] rounded-full "
             />
             <div className="flex w-full flex-col gap-0.5">
               <div className="flex items-center justify-between">
                 <Typography variant="h5" color="blue-gray">
-                  Tania Andrew
+                  John Musiala
                 </Typography>
               </div>
               <Typography color="white">Frontend Lead @ Google</Typography>
@@ -66,9 +66,57 @@ const AboutUs = () => {
           </CardHeader>
           <CardBody className="mb-6 p-0">
             <Typography>
-              &quot;I found solution to all my design needs from Creative Tim. I
-              use them as a freelancer in my hobby projects for fun! And its
-              really affordable, very humble guys !!!&quot;
+              &quot;Grabbo is a game-changer in the grocery app industry! Its
+              seamless interface, expansive selection, and user-friendly
+              experience make it the next big thing. From convenience to
+              quality, Grabbo sets a new standard, delivering a remarkable
+              shopping experience to users. It's poised to revolutionize how we
+              shop for groceries! !!!&quot;
+            </Typography>
+            <div className="5 flex items-center gap-0 color-gold">
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+              <StarIcon />
+            </div>
+          </CardBody>
+        </Card>
+        <Card
+          color="transparent"
+          shadow={false}
+          className="w-full max-w-[26rem]"
+        >
+          <CardHeader
+            color="transparent"
+            floated={false}
+            shadow={false}
+            className="mx-0 flex items-center gap-4 pt-0 pb-8"
+          >
+            <Avatar
+              size="lg"
+              src="https://i.pinimg.com/originals/92/15/06/921506b456d62258a3b0537dd5133e45.jpg"
+              alt="tania andrew"
+              className="h-[15rem] rounded-full "
+            />
+            <div className="flex w-full flex-col gap-0.5">
+              <div className="flex items-center justify-between">
+                <Typography variant="h5" color="blue-gray">
+                  Tania Wangeci
+                </Typography>
+              </div>
+              <Typography color="white">Frontend Lead @ Google</Typography>
+            </div>
+          </CardHeader>
+          <CardBody className="mb-6 p-0">
+            <Typography>
+              &quot;Grabbo isn't just an app; it's a grocery-shopping
+              revolution! Its innovative approach, vast variety of products, and
+              intuitive design redefine convenience. As a corporate lead, I
+              foresee Grabbo becoming the go-to choice for anyone seeking a
+              hassle-free, efficient, and enjoyable grocery shopping experience.
+              It's the future of grocery apps, setting a new benchmark in the
+              industry! !!!&quot;
             </Typography>
             <div className="5 flex items-center gap-0 color-gold">
               <StarIcon />
@@ -108,51 +156,13 @@ const AboutUs = () => {
           </CardHeader>
           <CardBody className="mb-6 p-0">
             <Typography>
-              &quot;I found solution to all my design needs from Creative Tim. I
-              use them as a freelancer in my hobby projects for fun! And its
-              really affordable, very humble guys !!!&quot;
-            </Typography>
-            <div className="5 flex items-center gap-0 color-gold">
-              <StarIcon />
-              <StarIcon />
-              <StarIcon />
-              <StarIcon />
-              <StarIcon />
-            </div>
-          </CardBody>
-        </Card>
-        <Card
-          color="transparent"
-          shadow={false}
-          className="w-full max-w-[26rem]"
-        >
-          <CardHeader
-            color="transparent"
-            floated={false}
-            shadow={false}
-            className="mx-0 flex items-center gap-4 pt-0 pb-8"
-          >
-            <Avatar
-              size="lg"
-              variant="circular"
-              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
-              alt="tania andrew"
-              className="h-[15rem] rounded-full "
-            />
-            <div className="flex w-full flex-col gap-0.5">
-              <div className="flex items-center justify-between">
-                <Typography variant="h5" color="blue-gray">
-                  Tania Andrew
-                </Typography>
-              </div>
-              <Typography color="white">Frontend Lead @ Google</Typography>
-            </div>
-          </CardHeader>
-          <CardBody className="mb-6 p-0">
-            <Typography>
-              &quot;I found solution to all my design needs from Creative Tim. I
-              use them as a freelancer in my hobby projects for fun! And its
-              really affordable, very humble guys !!!&quot;
+              &quot;Grabbo simplifies the grocery shopping experience like never
+              before! With its intuitive interface and comprehensive range of
+              products, navigating and purchasing essentials becomes effortless.
+              This app streamlines the entire process, making grocery shopping
+              not just convenient but also enjoyable. Grabbo is the ultimate
+              solution for anyone looking to effortlessly manage their grocery
+              needs. !!!&quot;
             </Typography>
             <div className="5 flex items-center gap-0 color-gold">
               <StarIcon />

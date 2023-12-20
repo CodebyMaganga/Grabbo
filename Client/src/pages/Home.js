@@ -7,10 +7,10 @@ import SwiperProduct from "./components/SwiperProducts";
 import Pricingsection from "./components/Pricingsection";
 import Faqs from "./components/Faqs";
 import Footerapp from "./components/Footerapp";
-const Home = () => {
+const Home = ({ setCartItemCount }) => {
   return (
     <>
-      <Navbar />
+      <Navbar setCartItemCount={setCartItemCount} />
       <Hero />
       <ProductSlider />
       <AboutUs />

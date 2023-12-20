@@ -2,7 +2,7 @@ import React from "react";
 import "./hero.css";
 import signIn from "../images/signIn.png";
 import delivery from "../images/delievery.png";
-import eat from "../images/fork n knife.png";
+import eat from "../images/veggies.png";
 
 const Hero = () => {
   return (
@@ -39,7 +39,7 @@ const Hero = () => {
         <div className=" info-section grid place-items-center min-[800px]:flex min-[800px]:flex-row min-[800px]:justify-around">
           <div className="mt-10 iconvisuals w-24">
             <img src={signIn} alt="" />
-            <p>Sign In and Choose From our weekly menu</p>
+            <p>Sign In to buy your favorite groceries</p>
           </div>
           <div className="iconvisuals mt-10 w-24">
             <img src={delivery} alt="" />
@@ -47,7 +47,7 @@ const Hero = () => {
           </div>
           <div className="iconvisuals mt-10 w-24">
             <img src={eat} alt="" />
-            <p>Enjoy your meal</p>
+            <p>Enjoy your healthy grab </p>
           </div>
         </div>
         <div className="flex flex-row justify-center mt-10">

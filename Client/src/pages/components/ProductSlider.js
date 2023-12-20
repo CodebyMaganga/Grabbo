@@ -4,6 +4,7 @@ import {
   CardBody,
   Typography,
   Avatar,
+  Button,
 } from "@material-tailwind/react";
 
 export default function ProductSlider() {
@@ -23,15 +24,13 @@ export default function ProductSlider() {
         </CardHeader>
         <CardBody className="relative py-14 px-6 md:px-12">
           <Typography
-            variant="h2"
+            variant="h3"
             color="white"
             className="mb-6 font-medium leading-[1.5]"
           >
-            How we design and code open-source projects?
+            Fresh Picks: Unbeleafable Veggie Deals Await!
           </Typography>
-          <Typography variant="h5" className="mb-4 text-gray-400">
-            Tania Andrew
-          </Typography>
+          <Button className="mb-4 text-gray-400">Shop</Button>
         </CardBody>
       </Card>
       <Card
@@ -48,15 +47,13 @@ export default function ProductSlider() {
         </CardHeader>
         <CardBody className="relative py-14 px-6 md:px-12">
           <Typography
-            variant="h2"
+            variant="h3"
             color="white"
             className="mb-6 font-medium leading-[1.5]"
           >
-            How we design and code open-source projects?
+            Revitalize with our Fresh Juices & Smoothies!
           </Typography>
-          <Typography variant="h5" className="mb-4 text-gray-400">
-            Tania Andrew
-          </Typography>
+          <Button className="mb-4 text-gray-400">Shop</Button>
         </CardBody>
       </Card>
       <Card
@@ -73,15 +70,13 @@ export default function ProductSlider() {
         </CardHeader>
         <CardBody className="relative py-14 px-6 md:px-12">
           <Typography
-            variant="h2"
+            variant="h3"
             color="white"
             className="mb-6 font-medium leading-[1.5]"
           >
-            How we design and code open-source projects?
+            Farm-Fresh Goodness: Explore Our Animal Products Range!
           </Typography>
-          <Typography variant="h5" className="mb-4 text-gray-400">
-            Tania Andrew
-          </Typography>
+          <Button className="mb-4 text-gray-400">Shop</Button>
         </CardBody>
       </Card>
     </div>
