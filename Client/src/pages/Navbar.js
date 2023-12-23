@@ -40,7 +40,7 @@ const Navbar = ({ setCartItemCount, cartItemCount }) => {
               <li>Sign Up</li>
             </Link>
             <Link to="/cart">
-              <img src={ToteBag} alt="" />
+              <img className="image h-3 w-auto" src={ToteBag} alt="" />
             </Link>
           </ul>
         </div>
@@ -59,9 +59,7 @@ const Navbar = ({ setCartItemCount, cartItemCount }) => {
             <Link to="/cart">
               <img className="image h-7 w-auto ml-20" src={ToteBag} alt="" />
             </Link>
-            <span className="relative -top-4 text-smokyblack">
-              {cartItemCount}
-            </span>
+            <span className="relative -top-4 text-white">{cartItemCount}</span>
           </ul>
         </div>
       </div>

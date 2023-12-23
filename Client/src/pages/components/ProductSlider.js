@@ -6,6 +6,7 @@ import {
   Avatar,
   Button,
 } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 export default function ProductSlider() {
   return (
@@ -28,9 +29,13 @@ export default function ProductSlider() {
             color="white"
             className="mb-6 font-medium leading-[1.5]"
           >
-            Fresh Picks: Unbeleafable Veggie Deals Await!
+            Fresh Picks: <span className="text-applegreen">Unbeleafable </span>
+            <span className="text-gold">Veggie</span>{" "}
+            <span className="text-engorange">Deals</span> Await!
           </Typography>
-          <Button className="mb-4 text-gray-400">Shop</Button>
+          <Link to="/menu">
+            <Button className="mb-4 text-gray-400">Shop →</Button>
+          </Link>
         </CardBody>
       </Card>
       <Card
@@ -51,9 +56,14 @@ export default function ProductSlider() {
             color="white"
             className="mb-6 font-medium leading-[1.5]"
           >
-            Revitalize with our Fresh Juices & Smoothies!
+            <span className="text-applegreen">Revitalize </span>
+            with our <span className="text-applegreen">Fresh </span>
+            <span className="text-gold">Juices </span>&
+            <span className="text-engorange"> Smoothies</span>
           </Typography>
-          <Button className="mb-4 text-gray-400">Shop</Button>
+          <Link to="/menu">
+            <Button className="mb-4 text-gray-400">Shop →</Button>
+          </Link>
         </CardBody>
       </Card>
       <Card
@@ -74,9 +84,16 @@ export default function ProductSlider() {
             color="white"
             className="mb-6 font-medium leading-[1.5]"
           >
-            Farm-Fresh Goodness: Explore Our Animal Products Range!
+            Farm
+            <span className="text-cocoabrown"> Fresh: </span>
+            Goodness: Explore Our
+            <span className="text-applegreen"> Animal </span>
+            Products
+            <span className="text-engorange"> Range</span>
           </Typography>
-          <Button className="mb-4 text-gray-400">Shop</Button>
+          <Link to="/menu">
+            <Button className="mb-4 text-gray-400">Shop →</Button>
+          </Link>
         </CardBody>
       </Card>
     </div>
